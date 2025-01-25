@@ -1,6 +1,6 @@
 ### Container for kvm-device-plugin
 
-https://github.com/cgwalters/kvm-device-plugin.git
+https://github.com/cgwalters/kvm-device-plugin
 
 No version tags from source
 
