@@ -2,7 +2,7 @@
 
 https://github.com/cgwalters/kvm-device-plugin
 
-No version tags from source
+Tag latest by date
 
 ```bash
 TAG=v$(date -u +'%Y%m%d').1
