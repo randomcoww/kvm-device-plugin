@@ -7,7 +7,7 @@ RUN set -x \
     git \
     make \
   \
-  && git clone -b $VERSION https://github.com/cgwalters/kvm-device-plugin.git \
+  && git clone --depth 1 -b $VERSION https://github.com/cgwalters/kvm-device-plugin.git \
   && cd kvm-device-plugin \
   && make build
 
