@@ -11,7 +11,7 @@ RUN set -x \
   && cd kvm-device-plugin \
   && make build
 
-FROM alpine:edge
+FROM alpine:latest
 
 COPY --from=BUILD /go/kvm-device-plugin/cmd/kvm/kvm /usr/bin/device-plugin-kvm
 CMD ["/usr/bin/device-plugin-kvm"]
