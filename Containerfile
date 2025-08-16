@@ -1,4 +1,4 @@
-FROM golang:alpine AS BUILD
+FROM golang:alpine AS build
 ARG VERSION=main
 
 RUN set -x \
@@ -13,5 +13,5 @@ RUN set -x \
 
 FROM alpine:latest
 
-COPY --from=BUILD /go/kvm-device-plugin/cmd/kvm/kvm /usr/bin/device-plugin-kvm
+COPY --from=build /go/kvm-device-plugin/cmd/kvm/kvm /usr/bin/device-plugin-kvm
 CMD ["/usr/bin/device-plugin-kvm"]
