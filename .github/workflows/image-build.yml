@@ -42,7 +42,6 @@ jobs:
           --dockerfile="./Containerfile" \
           --context="${{ github.repositoryUrl }}#${{ github.ref }}#${{ github.sha }}" \
           --destination="ghcr.io/${{ github.repository }}:v$TAG" \
-          --cache \
           --push-retry 3
   cleanup:
     needs:
